@@ -1,0 +1,19 @@
+{
+  "extends": ["eslint:recommended"],
+  "overrides": [
+    {
+      "files": ["test/**"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": { "jest/prefer-expect-assertions": "off" }
+    }
+  ],
+  "rules": {
+    "indent": ["error", 2]
+  },
+  "settings": {
+    "jest": {
+      "version": 27
+    }
+  }
+}
